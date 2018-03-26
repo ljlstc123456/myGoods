@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="index-container">
+    <text class="h2">xxxx公司/店铺</text>
+    <text class="info">这里是公司简介这里是公司简介这里是公司简介这里是公司简介这里是公司简介这里是公司简介这里是公司简介这里是公司简介这里是公司简介</text>
+  </view>
+  <view class='title'>
+    <image src="../../static/img/adress.png" mode='aspectFit'></image>
+    <text class="name">公司地址</text>
+    <text class="detail" catchtap='goMap'>公司地址</text>
+  </view>
+  <view class='title'>
+    <image src="../../static/img/time.png" mode='aspectFit'></image>
+    <text class="name">营业时间</text>
+    <text class="detail">上午9：00~晚上10：00</text>
+  </view>
+  <view class='title'>
+    <image src="../../static/img/phone.png" mode='aspectFit'></image>
+    <text class="name">联系电话</text>
+    <text class="detail">159xxxxxxxx</text>
+  </view>
+  <view class='title'>
+    <image src="../../static/img/img.png" mode='aspectFit'></image>
+    <text class="name">公司风采</text>
+    <view class="img-list">
+      <view catchtap='preview'>
+        <image src="../../static/img/1.jpg" mode='aspectFill'></image>
+      </view>
+      <view catchtap='preview'>
+        <image src="../../static/img/2.jpg" mode='aspectFill'></image>
+      </view>
+      <view catchtap='preview'>
+        <image src="../../static/img/3.jpg" mode='aspectFill'></image>
+      </view>
+      <view catchtap='preview'>
+        <image src="../../static/img/4.jpg" mode='aspectFill'></image>
+      </view>
+      <view catchtap='preview'>
+        <image src="../../static/img/5.jpg" mode='aspectFill'></image>
+      </view>
+      <view catchtap='preview'>
+        <image src="../../static/img/6.jpg" mode='aspectFill'></image>
+      </view>
+    </view>
+  </view>
+</view>
